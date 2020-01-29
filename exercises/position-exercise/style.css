@@ -1,0 +1,44 @@
+body {
+  background: ##76FF03;
+  font-family: sans-serif, "helvetica";
+  padding: 20px;
+  margin: 20px;
+}
+.static {
+   position: static;
+   background: #EA80FC;
+   width: 100px;
+   height: 500px;
+}
+.fixed {
+  position: fixed;
+  background: #76FF03;
+  width: 300px;
+  height: 400px;
+  bottom: 20px;
+  left: 20px;
+}
+.absolute {
+  position: absolute;
+  background: #FF8F00;
+  width: 200px;
+  height: 20px;
+  bottom: 0px;
+  left: 10px;
+}
+.relative {
+   position: relative;
+   background: #FFFF00;
+   width: 400px;
+   height: 400px;
+   Margin: 0 auto;
+}
+.sticky {
+   position: sticky;
+   background: ##2962FF;
+   margin: 30px;
+   width: 100px;
+   height: 300px;
+   top: 30px;
+   right: 10px;
+}

@@ -1,0 +1,26 @@
+.container {
+  background: grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  height: 400px;
+
+}
+.box {
+  width: 40px;
+  height: 40px;
+}
+.red {
+  background: red;
+}
+.blue {
+  background: blue;
+}
+.yellow {
+  background: yellow;
+}
+.green {
+  background: green;
+}
