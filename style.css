@@ -1,0 +1,35 @@
+body {
+  font-family: "helvetica", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+h1 {
+  font-style: italic;
+  font-size: 80px;
+  font-weight: normal;
+  color: blue;
+  background: yellow;
+  margin: 0px;
+  padding: 20px;
+}
+p {
+  font-size: 50px;
+  color: blue;
+  background: red;
+  padding: 20px;
+  margin: 0px;
+}
+a {
+  font-size: 50px;
+  color: orange;
+  text-decoration: overline;
+}
+a:hover {
+  background-color: blue;
+}
+img {
+  width: 30px;
+}
+.quote {
+  color: yellow;
+}
