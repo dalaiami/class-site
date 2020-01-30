@@ -2,6 +2,7 @@ body {
   font-family: "helvetica", sans-serif;
   margin: 0px;
   padding: 0px;
+  background: blue;
 }
 h1 , h1 > a {
   font-style: italic;
