@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+  <title>AP - Resonses</title>
+  <link rel="icon" href="smile.gif">
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: transparent;
+  margin: 25px 70px 50px 5px;
+  padding: 25px;
+}
+.grid-item {
+  background-color: transparent;
+  border: 0px solid rgba(0, 0, 0, 0.8);
+  padding: 10px 10px;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+.grid-item > img {
+  height: 400px;
+  width: 325px;
+}
+img {
+    -webkit-transition: all 300ms 0ms ease-in-out;
+    transition: all 300ms 0ms ease-in-out;
+    width: 50px;
+}
+
+img:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+</style>
+</head>
+<body>
+<div class="grid-container" >
+  <div class="grid-item"><img src="responses/11920-www.jpg"></div>
+  <div class="grid-item"><img src="responses/11920-theweb.jpg"></div>
+  <div class="grid-item"><img src="repsonses/11920-codingbones1.jpg"onclick="this.src="responses/11920-codingbones2.jpg";" onmouseleave="this.src='responses/11920-codingbones2.jpg';"/></div>
+  </div>
+  </body>
+  </html>
