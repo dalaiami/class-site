@@ -4,6 +4,6 @@
 }
 
 .hoverme:hover  hover-img {
-  display: block;
+  display: inline;
   /* opacity: 6; */
 }
