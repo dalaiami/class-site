@@ -1,10 +1,38 @@
+html {
+  background: whitesmoke;
+}
+
+body {
+  margin: 10px;
+  padding: 10px;
+  font-family: sans-serif;
+  color: white;
+}
+
+a {
+  color: whitesmoke;
+}
+
 .hover-img {
   display: none;
   /* opacity: 0; */
 }
 
-.hover-btn:hover  .hover-img {
-  display: block;
+.hover-btn {
+  margin: 10px;
+  padding: 10px;
+  height: 175px;
+  background: orange;
+  border-radius: 20px;
+}
+
+.hover-btn:hover {
+  background: transparent;
+  border: solid orange;
+}
+
+.hover-btn:hover .hover-img {
+  display: inline;
   /* opacity: 6; */
   top: 30%;
   right: 20%;
@@ -12,21 +40,25 @@
 
 .btn {
   padding: 30px;
-  background: yellow;
+  background: orange;
   position: absolute;
   transition: 2s ease-in;
   transform: 3s ease;
+  text-decoration: none;
+  top: 50%;
 }
 
 .btn:hover {
-  background: orange;
+  background: transparent;
+  border: orange solid;
   transform: scale(1.5);
+  color: black;
 }
 
 .prev-btn {
-  left: 0px;
+  left: 10px;
 }
 
 .next-btn {
-  right: 0px;
+  right: 10px;
 }
