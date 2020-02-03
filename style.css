@@ -4,14 +4,16 @@ body {
   padding: 10px;
   background: blue;
 }
+
 div {
   background: blue;
   text-align: center;
 }
-h1 , h1 > a {
+
+h1, h1>a {
   background: blue;
   margin: 0px;
-  padding: 20px;
+  padding: 10px;
   font-style: italic;
   font-size: 50px;
   font-weight: normal;
@@ -19,6 +21,7 @@ h1 , h1 > a {
   text-transform: uppercase;
   color: white;
 }
+
 p {
   font-size: 20px;
   color: white;
@@ -26,15 +29,18 @@ p {
   padding: 20px;
   margin: 0px:
 }
+
 h3, a {
   font-size: 20px;
   color: white;
   text-decoration: none;
 }
+
 a:hover {
   background-color: blue;
   color: whitesmoke;
 }
+
 img {
   width: 50px;
 }
