@@ -26,8 +26,7 @@ p {
 }
 a {
   font-size: 20px;
-  color: orange;
-  text-decoration: overline;
+  color: white;
 }
 a:hover {
   background-color: blue;
@@ -37,4 +36,8 @@ img {
 }
 .responses {
   display: scroll;
+}
+
+.responses > h1 > a:hover {
+  background-color: yellow;
 }
