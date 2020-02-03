@@ -39,7 +39,7 @@ img {
   width: 50px;
 }
 
-.projects , .exercises {
+.topbar {
   display: flex;
   flex-direction: row;
 }
