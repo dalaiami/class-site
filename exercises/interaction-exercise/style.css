@@ -1,11 +1,11 @@
 .hover-img {
-  display: none;
-  /* opacity: 1; */
+  /* display: none; */
+  opacity: 0;
 }
 
-.hover-btn:hover  hover-img {
-  display: inline;
-  /* opacity: 6; */
+.hover-btn:hover  .hover-img {
+  /* display: block; */
+  opacity: 6;
   top: 30%;
   right: 20%;
 }
