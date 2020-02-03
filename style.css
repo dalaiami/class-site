@@ -58,6 +58,6 @@ img {
 }
 
 .responses {
-  display: scroll;
+  /* display: scroll; */
   width: 1600px;
 }
