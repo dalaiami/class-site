@@ -16,6 +16,11 @@
   position: absolute;
 }
 
+.btn:hover {
+  background: orange;
+  transition: 2s ease-in-out;
+}
+
 .prev-btn {
   left: 0px;
 }
