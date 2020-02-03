@@ -15,3 +15,11 @@
   background: yellow;
   position: absolute;
 }
+
+.prev-btn {
+  left: 0px;
+}
+
+.next-btn {
+  right: 0px;
+}
