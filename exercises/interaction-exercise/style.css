@@ -14,11 +14,11 @@
   padding: 30px;
   background: yellow;
   position: absolute;
+  transition: 2s ease-in-out;
 }
 
 .btn:hover {
   background: orange;
-  transition: 2s ease-in-out;
 }
 
 .prev-btn {
