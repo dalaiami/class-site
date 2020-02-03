@@ -37,6 +37,12 @@ a:hover {
 img {
   width: 50px;
 }
+
+.projects , .exercises {
+  display: flex;
+  flex-direction: row;
+}
+
 .responses {
   display: ;
 }
