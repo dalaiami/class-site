@@ -9,3 +9,9 @@
   top: 30%;
   right: 20%;
 }
+
+.btn {
+  padding: 30px;
+  background: yellow;
+  position: absolute;
+}
