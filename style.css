@@ -10,7 +10,8 @@ div {
   padding: 20px;
   height: 600px;
   background: blue;
-  text-align: center;
+  align-content: center;
+  text-align: justify;
 }
 
 h1, h1>a {
