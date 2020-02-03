@@ -3,7 +3,7 @@
   /* opacity: 1; */
 }
 
-.hoverme:hover  hover-img {
+.hover-me:hover  hover-img {
   display: inline;
   /* opacity: 6; */
   top: 30%;
@@ -15,11 +15,12 @@
   background: yellow;
   position: absolute;
   transition: 2s ease-in-out;
-  margin: 0 auto;
+  transform: 3s ease;
 }
 
 .btn:hover {
   background: orange;
+  transform: scale(1.5);
 }
 
 .prev-btn {
