@@ -1,7 +1,9 @@
 .hover-img {
   display: none;
+  /* opacity: 1; */
 }
 
-.hoverme:hover hover-img {
+.hoverme:hover  hover-img {
   display: block;
+  /* opacity: 6; */
 }
