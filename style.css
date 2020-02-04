@@ -18,7 +18,7 @@ h1 {
   font-size: 50px;
   font-weight: normal;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: 3px;
   color: white;
 }
@@ -35,11 +35,14 @@ h3, a {
   font-size: 20px;
   color: white;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 a:hover {
   background-color: blue;
   color: whitesmoke;
+  border: white solid thin;
+
 }
 
 img {
@@ -55,18 +58,27 @@ img {
   width: 800px;
 }
 .exercises {
-  width: 200px;
+  width: 400px;
 }
 
 .responses {
   /* display: scroll; */
-  width: 1600px;
+  width: 1200px;
 }
 
 .responses > h3 > a {
     border: white solid thin;
     padding: 5px;
 }
+
+.projects:hover, .exercises:hover , .responses:hover {
+  border: white dashed thin;
+  border-radius: 20px;
+}
+/* .projects:hover, .exercises:hover , .responses:hover h1 {
+  background: white;
+  color: blue;
+} */
 
 footer > a {
     border: white solid thin;
