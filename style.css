@@ -63,6 +63,12 @@ img {
   width: 1600px;
 }
 
-footer{
-  align-content: center;
+.responses > h3 > a {
+    border: white solid thin;
+    padding: 5px;
+}
+
+footer > a {
+    border: white solid thin;
+    padding: 5px;
 }
