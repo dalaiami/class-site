@@ -24,6 +24,8 @@ a {
   height: 175px;
   background: orange;
   border-radius: 20px;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .hover-btn:hover {
