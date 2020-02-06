@@ -58,15 +58,15 @@ img {
 }
 
 .projects{
-  width: 800px;
+  width: 60vw;
 }
 .exercises {
-  width: 400px;
+  width: 40vw;
 }
 
 .responses {
   /* display: scroll; */
-  width: 1200px;
+  width: 95vw;
 }
 
 .responses > h3 > a {

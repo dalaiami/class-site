@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: whitesmoke;
+}
+
+.flex {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+  justify-content: space-around;
+  align-items: center;
+  animation: pulse 5s infinite ease-in-out alternate;
+}
+
+h1 {
+  background: transparent ;
+  font-size: 3vh;
+  color: rgb(251, 251, 251);
+  text-transform: lowercase;
+  letter-spacing: 3px;
+}
+
+.circle {
+  position: fixed;
+  z-index: -1;
+  background: rgb(17, 38, 236);
+  height: 40vw;
+  width: 40vw;
+  border-radius: 50%;
+}
+
+@keyframes pulse {
+  0% {transform:scale(1.2);}
+  100%{transform:scale(1);
+      background: whitesmoke;
+  }
+}
