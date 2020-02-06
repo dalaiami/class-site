@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>Poem - L4-1</title>
+    <title>Poem - L4-2</title>
     <meta http-equiv="content-type"
 content="text/html;charset=utf-8" />
     <link rel="shortcut icon" href="smile.png">
@@ -14,26 +14,34 @@ content="text/html;charset=utf-8" />
       border-radius: 20px;
       font-family: "helvetica" , sans-serif;
       font-weight: lighter;
-      text-align: right;
+      text-align: left;
       letter-spacing: 3px;
-    }
-    .title{
-      width: 400px;
     }
     .title > h2 {
       padding: 30px;
       background: white;
       border-radius: 20px;
-      font-size: 33px;
-      line-height: 45px;
+      font-size: 66px;
+      text-transform: lowercase;
+      line-height: 70px;
       color: blue;
     }
     .title > h2:hover {
       background: blue;
       border: solid white;
       border-radius: 20px;
+      text-align: center;
       color: white;
     }
+    h2:hover span {
+    font-size: 70px;
+    text-transform: uppercase;
+  }
+  h3 {
+    letter-spacing: 6px;
+    line-height: 35px;
+    font-style: oblique;
+  }
     .poem {
       width: 600px;
     }
@@ -44,12 +52,14 @@ content="text/html;charset=utf-8" />
       border-radius: 20px;
       color: blue;
     }
-
+    span {
+      color: white;
+    }
     </style>
   </head>
   <body>
     <div class="title">
-      <h2>Poet Wrestling with {Artificial} Intelligence</h2>
+      <h2>Poet Wrestling with <span>Artificial</span> Intelligence</h2>
     </div>
     </div>
     <div class="poem">

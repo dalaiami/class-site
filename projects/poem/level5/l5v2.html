@@ -1,56 +1,126 @@
 <!doctype html>
 <html>
   <head>
-    <title>Poem - L4-1</title>
+    <title>Poem - L5-2</title>
+    <link rel="stylesheet" href="style.css">
     <meta http-equiv="content-type"
 content="text/html;charset=utf-8" />
     <link rel="shortcut icon" href="smile.png">
     <style>
     body {
       margin: 10px;
-      padding: 120px;
+      padding: 50px;
       background: blue;
-      border: dotted white;
-      border-radius: 20px;
       font-family: "helvetica" , sans-serif;
       font-weight: lighter;
-      text-align: right;
+      text-align: center;
       letter-spacing: 3px;
     }
-    .title{
-      width: 400px;
+    #page {
+      background: blue;
+      padding: 90px;
+      border: dotted white;
+      border-radius: 100px;
+    }
+    .buttons {
+      position: fixed;
+      padding: 3px;
+      width: 90vw;
+      height: 1.2vw;
+      top: 20px;
+      display: flex;
+      background: whitesmoke;
+      opacity: 80%;
+    }
+    .buttons:hover {
+      opacity: 100%;
+      background: white;
+    }
+    .btn1 {
+      height: .8vw;
+      width: .8vw;
+      margin: .5px;
+      background: red;
+      border: solid rgb(212, 212, 212) thin;
+      border-radius: 50%;
+      font-size: 9px;
+      text-align: right;
+}
+    .btn2 {
+      height: .8vw;
+      width: .8vw;
+      margin: .5px;
+      background: yellow;
+      border: solid rgb(212, 212, 212) thin;
+      border-radius: 50%;
+      font-size: 9px;
+      text-align: right;
+    }
+    .btn3 {
+      height: .8vw;
+      width: .8vw;
+      margin: .5px;
+      background: green;
+      border: solid rgb(212, 212, 212) thin;
+      border-radius: 50%;
+      font-size: 9px;
+      text-align: right;
+    }
+    .buttons:hover .btn1 , .btn2 , .btn3 {
+      color: rgb(212, 212, 212);
     }
     .title > h2 {
       padding: 30px;
       background: white;
-      border-radius: 20px;
-      font-size: 33px;
-      line-height: 45px;
+      border-radius: 80px;
+      font-size: 44px;
+      text-transform: lowercase;
+      line-height: 70px;
       color: blue;
     }
     .title > h2:hover {
       background: blue;
-      border: solid white;
-      border-radius: 20px;
+      border: dotted white;
+      border-radius: 80px;
+      text-align: center;
       color: white;
     }
+    h2:hover span {
+    text-transform: uppercase;
+    text-decoration: underline wavy red;
+  }
+  h3 {
+    letter-spacing: 6px;
+    line-height: 35px;
+    font-style: oblique;
+  }
     .poem {
       width: 600px;
     }
+    .poem:hover h3 {
+      text-decoration: underline wavy red;
+    }
     .tltle , .poem {
       margin: 40px auto;
-      padding: 80px;
+      padding: 60px;
       background: white;
-      border-radius: 20px;
+      border-radius: 80px;
       color: blue;
     }
-
+    span {
+      color: white;
+    }
     </style>
   </head>
   <body>
-    <div class="title">
-      <h2>Poet Wrestling with {Artificial} Intelligence</h2>
+    <div class="buttons">
+        <div class="btn1">x</div>
+        <div class="btn2">-</div>
+        <div class="btn3">></div>
     </div>
+    <div id="page">
+    <div class="title">
+      <h2>Poet Wrestling with <span>Artificial</span> Intelligence</h2>
     </div>
     <div class="poem">
       <p><h3>Personification is inevitable.</h3> It goes hand
@@ -151,8 +221,6 @@ content="text/html;charset=utf-8" />
         <br />over
         <br />whatever dares &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;next.</h3>
     </div>
+    </div>
   </body>
-  <footer>
-    <!-- <a href="#top"><img src="images/smile.png" height="20px"/></a> -->
-  </footer>
 </html>
