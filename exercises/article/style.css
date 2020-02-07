@@ -1,34 +1,38 @@
 body {
-  background: #G1F5FE;
+  background: rgb(222, 222, 231);
   font-family: sans-serif, "helvetica";
   padding: 20px;
 }
 .topnav {
   overflow: hidden;
-  background-color: #G1F5FE;
+  background-color: rgb(187, 235, 250);
   position: static;
+  width: 25vw;
   left: 30px;
   top: 5px;
   padding: 20px;
   margin-bottom: 10px;
+  border-radius: 20px;
 }
 .topnav a {
   float: left;
   display: inline-block;
-  color: black;
+  color: rgb(30, 83, 106);
   text-align: center;
   padding: 10px 10px;
   text-decoration: none;
   font-size: 14px;
+  border-radius: 20px;
 }
 .topnav a:hover {
   color: whitesmoke;
 }
 .topnav .icon {
   display: none;
+  border-radius: 20px;
 }
 div:hover {
-  background: #BBDEFB;
+  background: rgb(99, 218, 255);
 }
 p {
   font-size: 18px;
@@ -41,30 +45,30 @@ a {
   text-decoration-style: solid;
 }
 a:hover {
-  background: #01579B;
+  background: rgb(71, 187, 237);
   color: white;
 }
  img {
   height: 255px;
   display: inline;
   padding: 10px;
+  border-radius: 20px;
 }
 .prelude {
-  background: #01579B;
+  background: rgb(54, 190, 226);
   padding: 30px;
   margin-top: 20px;
   margin-bottom: 30px;
   border: solid thin #01579B;
+  border-radius: 20px;
 }
- /* .prelude > img {
-  float: left;
-} */
 .info {
   float: left;
 }
 .bio {
-  background: #64B5F6;
+  background: rgb(71, 187, 237);
   border: solid thin #01579B;
+  border-radius: 20px;
   float: right;
 }
 .info , .bio {
@@ -80,16 +84,18 @@ a:hover {
   padding: 30px;
   margin-bottom: 30px;
   border: solid thin #01579B;
+  border-radius: 20px;
 }
 .conversation > a {
   text-transform: uppercase;
 }
 .sidebar {
   display: inline-block;
-  background: #64B5F6;
+  background: rgb(54, 190, 226);
   border: solid thin #01579B;
-  margin: 10px;
-  padding: 10px;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 30px;
   height: 300px;
 }
 .interview {
@@ -100,20 +106,23 @@ a:hover {
 height: 250px;
 }
 .key {
-  background-color: #E3F2FD;
+  background-color: rgb(160, 231, 247);
+  border-radius: 20px;
 }
 .quip {
   font-size: 25px;
-  background: #BBDEFB;
+  background: rgb(71, 187, 237);
   border: solid thin #01579B;
+  border-radius: 20px;
   padding: 10px;
   height: 320px;
 }
 .some-things {
-  background: #64B5F6;
+  background: rgb(71, 187, 237);
   padding: 30px;
   margin-bottom: 30px;
   border: solid thin #01579B;
+  border-radius: 20px;
 }
 .some-things > ul {
   font-size: 18px;
@@ -153,6 +162,6 @@ footer > a > img {
 }
 @media screen and (max-width: 600px) {
   .quip {
-  
+
   }
 }
