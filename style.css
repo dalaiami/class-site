@@ -7,7 +7,7 @@ body {
 
 div {
   margin: 5px;
-  padding: 10px;
+  padding: 0 10px;
   background: blue;
   align-content: center;
   text-align: justify;
