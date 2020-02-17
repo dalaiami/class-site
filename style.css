@@ -87,3 +87,12 @@ footer > a {
     border: white solid thin;
     padding: 5px;
 }
+
+@media screen and (max-width:600px;) {
+  .topbar {
+    flex-direction: column;
+  }
+  .responses {
+    display: inline-block;
+  }
+}
