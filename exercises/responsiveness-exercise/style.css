@@ -90,4 +90,12 @@ p {
   .apple::after {
     content: "+image=art";
   }
+
+  .row {
+    height: 40%;
+  }
+
+  .side {
+    height: 20%;
+  }
 }
