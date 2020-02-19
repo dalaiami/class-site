@@ -104,6 +104,7 @@ h1 , p {
     position: absolute;
     left: 20px;
     z-index: 1;
+    animation: none;
   }
 
   h1 , p {
