@@ -83,83 +83,63 @@
       transition: 1s;
     }
 
-    /* .flex-container:onclick {
-      .touch {
-        z-index: 1;
-      }
-    } */
-
-
     .touch {
-      display: flex;
-      flex-direction: column;
-      background: transparent;
+      display: grid;
+      grid-template-columns: 225px auto auto auto auto;
+      grid-template-rows: 325px 325px;
+      background: lightgray;
       border-radius: 20px;
       margin: 30px auto;
       padding: 25px;
-      width: 500px;
       align-content: center;
     }
 
     .touch img {
       background: transparent;
       padding: 20px;
-      height: 650px;
-      position: fixed;
-      top: 45px;
-      left: 220px;
+      height: 280px;
       align-content: space-around;
+      opacity: .5;
       z-index: 1;
     }
 
     .touch img:hover {
-      position: fixed;
-      top: 40px;
-      left: 530px;
-      height: 600px;
+      opacity: 1;
     }
 
-    .meta1:hover {
+    .meta1 {
     }
 
-    .meta2:hover {
+    .meta2 {
     }
 
-    .meta3:hover {
+    .meta3 {
     }
 
-    .meta4:hover {
+    .meta4 {
     }
 
-    .meta5:hover {
+    .meta5 {
     }
 
-    .meta6:hover {
+    .meta6 {
     }
 
-    .meta7:hover {
+    .meta7 {
     }
 
-    .meta8:hover {
+    .meta8 {
     }
 
-    .meta9:hover {
+    .meta9 {
     }
 
-    .meta10:hover {
+    .meta10 {
     }
 
-     /* .touch:hover {
-      animation: grow 8s ease;
-    } */
 
     .space {
       height: 100px;
-    }
-
-    @keyframes grow {
-      0 {transform: scale(0);}
-      100%{transform: scale(1.5);}
     }
 
 
@@ -210,8 +190,30 @@
       }
     }
   </style>
+
+  <!-- <script>
+    function imgloop()
+    {
+      var ar = [];
+      ar.push(".meta1");
+      ar.push(".meta2");
+      ar.push(".meta3");
+
+      for (i = 0; ar.length > i; i++)
+      {
+        var img = new Image(600, 550);
+        img.src = ar[i];
+
+        var src = document.getElementById("elementid");
+        src.appendChild(img);
+      }
+
+    }
+    </script> -->
+
 </head>
 <body>
+
 <div id="logo"><img src="images/logo2.png"></div>
 
 <div class="space"></div>
@@ -225,18 +227,22 @@
       A visual conversation between artist and computer. The translation of images to and from 3D. Using depth maps and the human <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;eye <br />to catalog and archive noteworthy sights.</p>
   </div>
 </div>
+
 <div class="touch">
-    <img  class="meta1" src="images/ogs/roof.jpg" onclick="this.src='images/3d/digital/roof.gif';" onmouseleave="this.src='images/3d/prints/3droof.png';"/>
-    <img class="meta2" src="images/ogs/light.jpg" onclick="this.src='images/3d/digital/ceilinglight.gif';" onmouseleave="this.src='images/3d/prints/3dlight.png';"/>
-    <img class="meta3" src="images/ogs/garage.jpg"onclick="this.src='images/3d/digital/garage.gif';" onmouseleave="this.src='images/3d/prints/3dgarage.png';"/>
-    <img class="meta4" src="images/ogs/conebases.jpg"onclick="this.src='images/3d/digital/conebases.gif';" onmouseleave="this.src='images/3d/prints/3dconebases.png';"/>
-    <img class="meta5" src="images/ogs/stickpoke.jpg"onclick="this.src='images/3d/digital/stickpoke.gif';" onmouseleave="this.src='images/3d/prints/3dstickpoke.png';"/>
-    <img class="meta6" src="images/ogs/fence.jpg"onclick="this.src='images/3d/digital/fencesplit.gif';" onmouseleave="this.src='images/3d/prints/3dfence.png';"/>
-    <img class="meta7" src="images/ogs/truck.jpg"onclick="this.src='images/3d/digital/truck.gif';" onmouseleave="this.src='images/3d/prints/3dtruck.png';"/>
-    <img class="meta8" src="images/ogs/grate.jpg"onclick="this.src='images/3d/digital/gate.gif';" onmouseleave="this.src='images/3d/prints/3dgrate.png';"/>
-    <img class="meta9" src="images/ogs/lock.jpg"onclick="this.src='images/3d/digital/lock.gif';" onmouseleave="this.src='images/3d/prints/3dlock.png';"/>
-    <img class="meta10" src="images/ogs/sign.jpg"onclick="this.src='images/3d/digital/sign.gif';" onmouseleave="this.src='images/3d/prints/3dsign.png';"/>
+  <div class="grid-item"><img  class="meta" src="images/ogs/roof.jpg" onclick="this.src='images/3d/digital/roof.gif';" onmouseleave="this.src='images/3d/prints/3droof.png';"/></div>
+  <div class="grid-item"><img class="meta" src="images/ogs/light.jpg" onclick="this.src='images/3d/digital/ceilinglight.gif';" onmouseleave="this.src='images/3d/prints/3dlight.png';"/></div>
+  <div class="grid-item"><img class="meta" src="images/ogs/garage.jpg"onclick="this.src='images/3d/digital/garage.gif';" onmouseleave="this.src='images/3d/prints/3dgarage.png';"/></div>
+  <div class="grid-item"><img class="meta" src="images/ogs/conebases.jpg"onclick="this.src='images/3d/digital/conebases.gif';" onmouseleave="this.src='images/3d/prints/3dconebases.png';"/></div>
+  <div class="grid-item"><img class="meta" src="images/ogs/stickpoke.jpg"onclick="this.src='images/3d/digital/stickpoke.gif';" onmouseleave="this.src='images/3d/prints/3dstickpoke.png';"/></div>
+  <div class="grid-item"><img class="meta" src="images/ogs/fence.jpg"onclick="this.src='images/3d/digital/fencesplit.gif';" onmouseleave="this.src='images/3d/prints/3dfence.png';"/></div>
+  <div class="grid-item"><img class="meta" src="images/ogs/truck.jpg"onclick="this.src='images/3d/digital/truck.gif';" onmouseleave="this.src='images/3d/prints/3dtruck.png';"/></div>
+  <div class="grid-item"><img class="meta" src="images/ogs/grate.jpg"onclick="this.src='images/3d/digital/gate.gif';" onmouseleave="this.src='images/3d/prints/3dgrate.png';"/></div>
+  <div class="grid-item"><img class="meta" src="images/ogs/lock.jpg"onclick="this.src='images/3d/digital/lock.gif';" onmouseleave="this.src='images/3d/prints/3dlock.png';"/></div>
+  <div class="grid-item"><img class="meta" src="images/ogs/sign.jpg"onclick="this.src='images/3d/digital/sign.gif';" onmouseleave="this.src='images/3d/prints/3dsign.png';"/></div>
     </div>
+
+    <!-- <button onclick="imgloop();">3d stuff</button> -->
+
 <div class="space"></div>
 
 
