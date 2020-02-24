@@ -21,16 +21,21 @@ a {
 .hover-btn {
   margin: 10px;
   padding: 10px;
+  position: fixed;
+  top: 60px;
+  left: 650px;
+  background: blue;
+  border-radius: 50px;
   height: 175px;
-  background: orange;
-  border-radius: 20px;
   justify-content: space-around;
   align-items: center;
 }
 
 .hover-btn:hover {
   background: transparent;
-  border: solid orange;
+  border: dashed blue;
+  width: 1350px;
+  left: 25px;
 }
 
 .hover-btn:hover .hover-img {
@@ -42,7 +47,8 @@ a {
 
 .btn {
   padding: 30px;
-  background: orange;
+  background: blue;
+  border-radius: 20px;
   position: absolute;
   transition: 2s ease-in;
   transform: 3s ease;
@@ -52,9 +58,10 @@ a {
 
 .btn:hover {
   background: transparent;
-  border: orange solid;
+  border: blue solid;
+  border-radius: 0px;
   transform: scale(1.5);
-  color: black;
+  color: blue;
 }
 
 .prev-btn {
