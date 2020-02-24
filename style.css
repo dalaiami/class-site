@@ -2,30 +2,30 @@ body {
   font-family: "helvetica", sans-serif;
   margin: 10px;
   padding: 10px;
-  background: blue;
+  background: whitesmoke;
 }
 
 div {
   margin: 5px;
   padding: 0 10px;
-  background: blue;
+  background: whitesmoke;
   align-content: center;
   text-align: justify;
 }
 
 h1 {
-  background: blue;
+  background: whitesmoke;
   font-size: 50px;
   font-weight: normal;
   text-decoration: none;
   text-transform: lowercase;
   letter-spacing: 3px;
-  color: white;
+  color: gray;
 }
 
 p {
   font-size: 20px;
-  color: white;
+  color: gray;
   background: red;
   padding: 20px;
   margin: 0px:
@@ -34,15 +34,15 @@ p {
 h3, a {
   margin: 3px;
   font-size: 30px;
-  color: white;
+  color: gray;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 a:hover {
-  background-color: blue;
-  color: whitesmoke;
-  border: white solid thin;
+  background-color: whitesmoke;
+  color: lightgray;
+  border: lightgray solid thin;
 
 }
 
@@ -70,12 +70,12 @@ img {
 }
 
 .responses > h3 > a {
-    border: white solid thin;
+    border: gray solid thin;
     padding: 5px;
 }
 
 .projects:hover, .exercises:hover , .responses:hover {
-  border: white dashed thin;
+  border: gray dashed thin;
   border-radius: 20px;
 }
 /* .projects:hover, .exercises:hover , .responses:hover h1 {
@@ -84,7 +84,7 @@ img {
 } */
 
 footer > a {
-    border: white solid thin;
+    border: gray solid thin;
     padding: 5px;
 }
 
