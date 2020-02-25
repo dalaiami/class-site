@@ -148,7 +148,7 @@ body {
    margin-right: 30px;
    padding: 20px;
    background: white;
-   border: solid radial-gradient(black, gray);
+   border: solid thin lightgray;
    border-radius: 50px;
    height: 120px;
    width: 120px;
