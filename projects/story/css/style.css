@@ -1,58 +1,145 @@
-html, body {
+body {
   font-family: "helvetica", sans-serif;
+  background-image: url('images/cord.jpg');
   margin: 10px;
   padding: 10px;
 }
 
-#logo {
-  position: absolute;
-  right: 15px;
-  top: 10px;
+::-webkit-scrollbar {
+  width: 5px;
 }
 
-#logo img {
-  height: 111px;
+::-webkit-scrollbar-track {
+  background: whitesmoke;
+  width: 5px;
 }
 
-#logo img:hover {
-  animation: grow 4s ease;
+::-webkit-scrollbar-thumb {
+  background: lightgray;
+  width: 5px;
+  border-radius: 20px;
 }
 
-a:link, a:visited {
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(#FF6F00, #FF8F00);
+}
+
+.ext-cord {
+    display: flex;
+    flex-direction: row;
+    background: transparent;
+    align-items: center;
+    position: absolute;
+    left: 100px;
+    top: 300px;
+}
+
+.plug {
+  background: radial-gradient(#FF6F00, #FF8F00);
+  border-radius: 50px;
+  height: 140px;
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+
+.row1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.row2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.port {
+  background: radial-gradient(black, gray);
+  border-radius: 10px;
+  width: .25px;
+  height: .25px;
+  padding: 20px;
+  margin: 15px;
+}
+
+.port2 {
+  background: radial-gradient(black, gray);
+  border-radius: 20px;
+  width: .25px;
+  height: .25px;
+  padding: 20px;
+  margin: 15px;
+}
+
+.cord {
+  background: linear-gradient(#FF6F00, #FF8F00);
+  height: 30px;
+  width: 12000px;
   color: black;
-  text-decoration: none
 }
 
-a:hover, a:active {
-  color: black;
-  text-decoration: none
+.wallplug {
+  background: radial-gradient(#FF6F00, #FF8F00);
+  border-radius: 50px;
+  height: 140px;
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
 }
 
-h1 {
-  text-align: center;
-  text-transform: uppercase;
+.wallplug a:active , a:hover , a:visited{
+  color: gray;
+  text-decoration: none;
 }
 
-h4 {
-  text-transform: uppercase;
+.row1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-@keyframes slide {
-    0% {transform:translateX(5vw);}
-    100% {transform:translateX(0vw);}
-}
-@keyframes grow {
-    0% {transform:scale(1);}
-    100% {transform:scale(6);}
+.row2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-@media screen and (max-width: 600px) {
-  #logo img {
-    height: 130px;
-  }
+.pin {
+  background: linear-gradient(-90deg ,lightgray, gray);
+  border-radius: 10px;
+  width: .5px;
+  height: .5px;
+  padding: 20px;
+  margin: 15px;
+}
 
-  #logo img:hover {
-    animation: none;
-  }
+.pin2 {
+  background: radial-gradient(lightgray, gray);
+  border-radius: 20px;
+  width: .25px;
+  height: .25px;
+  padding: 20px;
+  margin: 15px;
+}
 
+footer {
+  position: fixed;
+  bottom: 20px;
+  left: 10px;
+}
+
+footer > a {
+    border: gray solid thin;
+    padding: 5px;
+    color: gray;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
 }
