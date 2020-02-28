@@ -49,6 +49,7 @@ body {
 .made p , .wrap p , .wrap2 p {
   font-size: 18px;
   letter-spacing: 3px;
+  text-align: justify;
 }
 
 /* Wires */
@@ -250,9 +251,9 @@ body {
 .loopcord2 {
   background: blue;
   position: relative;
-  left: 2025px;
-  bottom: 80px;
-  height: 100px;
+  left: 2020px;
+  bottom: 120px;
+  height: 110px;
   width: 30px;
   z-index: 1;
   border-radius: 20px;
@@ -274,60 +275,61 @@ body {
   background: red;
   position: absolute;
   left: 10px;
-  width: 40px;
-  height: 190px;
+  width: 25px;
+  height: 180px;
   z-index: 2;
   border-radius: 20px;
   border: thin solid lightgray;
-  transform: skewY(50deg) rotate(-50deg);
+  transform: skewY(-60deg) rotate(-265deg);
 }
 
 .bluevelcro {
   background: blue;
   position: absolute;
   left: 10px;
-  width: 40px;
-  height: 190px;
+  width: 25px;
+  height: 185px;
   z-index: 2;
   border-radius: 20px;
   border: thin solid lightgray;
-  transform: skewY(50deg) rotate(-60deg);
+  transform: skewY(-60deg) rotate(-255deg);
 }
 
 .yellowvelcro {
   background: yellow;
   position: absolute;
   left: 10px;
-  width: 40px;
-  height: 190px;
+  width: 25px;
+  height: 175px;
   z-index: 1;
   border-radius: 20px;
   border: thin solid lightgray;
-  transform: skewY(50deg) rotate(-40deg);
+  transform: skewY(-60deg) rotate(-280deg);
 }
 
 .orangevelcro {
   background: orange;
   position: absolute;
   left: 10px;
-  width: 40px;
-  height: 190px;
+  width: 25px;
+  height: 180px;
   z-index: -1;
   border-radius: 20px;
   border: thin solid lightgray;
-  transform: skewY(50deg) rotate(-30deg);
+  transform: skewY(-60deg) rotate(-245deg);
 }
 
 .strap {
   background: black;
   position: absolute;
-  left: 15px;
-  bottom: 200px;
+  left: 10px;
+  bottom: 210px;
   width: 30px;
-  height: 50px;
+  height: 35px;
   z-index: 3;
   border: thin dashed lightgray;
-  transform: rotate(-120deg);
+  border-radius: 10px;
+  transform: rotate(120deg);
 }
 
 /* Big Cord */
@@ -514,7 +516,7 @@ body {
     left: 75vw;
     bottom: 5vh;
     height: 300px;
-    animation: run 10s ease;
+    animation: run 3s ease;
     transition: 1s;
 }
 
@@ -522,24 +524,39 @@ body {
   width: 1000px;
 }
 
-.live p {
-  font-size: 18px;
-  letter-spacing: 3px;
+.pix {
+  display: flex;
+  padding: 20px;
+  position: relative;
+  left: 500px;
 }
 
-/* .pix {
-  position: relative;
-} */
+.pix img {
+  margin: 5px;
+}
 
-/* @keyframes drop {
-  0{transform: translateY(1000vh);}
-  100%{transform: translateY(vh);}
+.etc {
+  padding: 20px;
+  position: relative;
+  left: 1000px;
+  width: 1000px;
+}
+
+.live p , .etc p {
+  font-size: 18px;
+  letter-spacing: 3px;
+  text-align: justify;
+}
+
+@keyframes drop {
+  0{transform: translateY(0vh);}
+  100%{transform: translateY(2vh);}
 }
 
 @keyframes run {
-  0{transform: translateX(370vw);}
-  100%{transform: translateX(70vw);}
-} */
+  0{transform: translateX(0vw);}
+  100%{transform: translateX(-2vw);}
+}
 
 footer {
   position: fixed;
@@ -554,4 +571,20 @@ footer > a {
     font-size: 20px;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+@media screen (max-width:420px){
+  .how  {
+    left: 10vw;
+    height: 33%;
+  }
+
+  .ext-cord {
+    height: 33%;
+  }
+
+  .where {
+  left: 10vw;
+  height: 33%;
+  }
 }
