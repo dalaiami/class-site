@@ -24,43 +24,66 @@ body {
   background: linear-gradient(#FF6F00, #FF8F00);
 }
 
+/* Top Info */
+
 .how {
     display: flex;
     flex-direction: row;
     background: transparent;
     align-items: center;
     position: absolute;
-    left: 600px;
-    top: 30px;
+    left: 45vw;
+    top: 4vh;
     height: 300px;
     animation: drop 3s ease;
+    transition: 1s;
 }
 
+.made {
+  padding: 20px;
+  position: absolute;
+  bottom: 10px;
+  width: 500px;
+}
+
+.made p , .wrap p , .wrap2 p {
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+
+/* Wires */
+
 .wires {
+  padding: 20px;
   background: transparent;
   position: relative;
-  left: 600px;
-  bottom: 10px;
-  height: 60px;
+  left: 850px;
+  top: 60px;
+  height: 300px;
 }
 
 .red {
   background: red;
   position: absolute;
   left: 10px;
-  width: 20px;
-  height: 50px;
-  transform: skewY(80deg) rotate(-20deg);
+  width: 30px;
+  height: 170px;
+  z-index: 2;
+  border-radius: 20px;
+  border: thin solid lightgray;
+  transform: skewY(50deg) rotate(-50deg);
 }
 
 .blue {
   background: blue;
   position: absolute;
-  left: 600px;
+  left: 10px;
   width: 30px;
-  height: 50px;
-  z-index: 1;
-  transform: skewY(80deg) rotate(-60deg);
+  height: 170px;
+  z-index: 2;
+  border-radius: 20px;
+  border: thin solid lightgray;
+  transform: skewY(50deg) rotate(-60deg);
 }
 
 .yellow {
@@ -68,46 +91,246 @@ body {
   position: absolute;
   left: 10px;
   width: 30px;
-  height: 50px;
-  z-index: -2;
-  transform: skewY(80deg) rotate(40deg);
+  height: 170px;
+  z-index: 1;
+  border-radius: 20px;
+  border: thin solid lightgray;
+  transform: skewY(50deg) rotate(-40deg);
 }
 
 .orange {
   background: orange;
   position: absolute;
   left: 10px;
-  width: 20px;
-  height: 50px;
-  z-index: 2;
-  transform: skewY(80deg) rotate(-40deg);
-}
-
-.pink {
-  background: pink;
-  position: absolute;
-  left: 10px;
-  width: 20px;
-  height: 50px;
-  z-index: -1;
-  transform: skewY(80deg) rotate(-70deg);
-}
-
-.green {
-  background: green;
-  position: absolute;
-  left: 10px;
   width: 30px;
-  height: 50px;
-  z-index: 3;
-  transform: skewY(80deg) rotate(-90deg);
+  height: 170px;
+  z-index: -1;
+  border-radius: 20px;
+  border: thin solid lightgray;
+  transform: skewY(50deg) rotate(-30deg);
 }
 
 .wrap {
+  padding: 20px;
   position: relative;
   left: 1200px;
   bottom: 10px;
+  width: 500px;
 }
+
+.wrap2 {
+  padding: 20px;
+  position: relative;
+  left: 2500px;
+  bottom: 10px;
+  width: 500px;
+}
+
+/* Loop Wrap */
+
+.looped {
+  padding: 20px;
+  background: transparent;
+  position: relative;
+  left: 1800;
+  top: 10px;
+  height: 300px;
+}
+
+.loopcord1 {
+  background: red;
+  position: relative;
+  left: 1640px;
+  bottom: 15px;
+  height: 160px;
+  width: 30px;
+  border-radius: 20px;
+  border: thin solid lightgray;
+}
+
+.loopset1 {
+  background: transparent;
+  position: absolute;
+  top: 40px;
+  left: 1650px;
+  height: 60px;
+}
+
+.loopset2 {
+  background: transparent;
+  position: absolute;
+  top: 60px;
+  left: 1740px;
+  height: 20px;
+  z-index: 1;
+}
+
+.loopset3 {
+  background: transparent;
+  position: absolute;
+  top: 80px;
+  left: 1840px;
+  height: 60px;
+  z-index: 2;
+}
+
+.blueloop {
+  background: blue;
+  position: absolute;
+  left: 20px;
+  width: 210px;
+  height: 210px;
+  border-radius: 100px;
+  border: thin solid lightgray;
+}
+
+.redloop {
+  background: red;
+  position: absolute;
+  left: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  border: thin solid lightgray;
+}
+
+.yellowloop {
+  background: yellow;
+  position: absolute;
+  left: 30px;
+  width: 190px;
+  height: 190px;
+  border-radius: 100px;
+  border: thin solid lightgray;
+}
+
+.orangeloop {
+  background: orange;
+  position: absolute;
+  left: 40px;
+  width: 170px;
+  height: 170px;
+  border-radius: 100px;
+  border: thin solid lightgray;
+}
+
+.circle1 {
+  background: whitesmoke;
+  position: absolute;
+  left: 45px;
+  top: 30px;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  z-index: 1;
+}
+
+.circle2 {
+  background: whitesmoke;
+  position: absolute;
+  left: 45px;
+  top: 30px;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  z-index: 2;
+}
+
+.circle3 {
+  background: whitesmoke;
+  position: absolute;
+  left: 45px;
+  top: 30px;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  z-index: 2;
+}
+
+.loopcord2 {
+  background: blue;
+  position: relative;
+  left: 2025px;
+  bottom: 80px;
+  height: 100px;
+  width: 30px;
+  z-index: 1;
+  border-radius: 20px;
+  border: thin solid lightgray;
+}
+
+/* Strap Wrap */
+
+.velcro {
+  background: transparent;
+  padding: 20px;
+  position: relative;
+  left: 3000px;
+  top: 60px;
+  height: 300px;
+}
+
+.redvelcro {
+  background: red;
+  position: absolute;
+  left: 10px;
+  width: 40px;
+  height: 190px;
+  z-index: 2;
+  border-radius: 20px;
+  border: thin solid lightgray;
+  transform: skewY(50deg) rotate(-50deg);
+}
+
+.bluevelcro {
+  background: blue;
+  position: absolute;
+  left: 10px;
+  width: 40px;
+  height: 190px;
+  z-index: 2;
+  border-radius: 20px;
+  border: thin solid lightgray;
+  transform: skewY(50deg) rotate(-60deg);
+}
+
+.yellowvelcro {
+  background: yellow;
+  position: absolute;
+  left: 10px;
+  width: 40px;
+  height: 190px;
+  z-index: 1;
+  border-radius: 20px;
+  border: thin solid lightgray;
+  transform: skewY(50deg) rotate(-40deg);
+}
+
+.orangevelcro {
+  background: orange;
+  position: absolute;
+  left: 10px;
+  width: 40px;
+  height: 190px;
+  z-index: -1;
+  border-radius: 20px;
+  border: thin solid lightgray;
+  transform: skewY(50deg) rotate(-30deg);
+}
+
+.strap {
+  background: black;
+  position: absolute;
+  left: 15px;
+  bottom: 200px;
+  width: 30px;
+  height: 50px;
+  z-index: 3;
+  border: thin dashed lightgray;
+  transform: rotate(-120deg);
+}
+
+/* Big Cord */
 
 .ext-cord {
     display: flex;
@@ -134,7 +357,10 @@ body {
 .length:hover {
   opacity: 1;
   transition: 2s;
+  padding: 10px;
 }
+
+/* First Plug */
 
 .plug {
   background: radial-gradient(#FF6F00, #FF8F00);
@@ -179,6 +405,8 @@ body {
   margin: 15px;
 }
 
+/* Cord */
+
 .cord {
   background: linear-gradient(#FF6F00, #FF8F00);
   height: 35px;
@@ -201,14 +429,7 @@ body {
   letter-spacing: 3px;
 }
 
-.spons {
-  margin: 10px;
-  margin-top: 50px;
-  position: absolute;
-  right: 20px;
-  top: 300px;
-  text-align: right;
-}
+/* Wall Plug */
 
 .wallplug {
   background: radial-gradient(#FF6F00, #FF8F00);
@@ -272,34 +493,53 @@ body {
    width: 120px;
 }
 
+
+.spons {
+  margin: 10px;
+  margin-top: 50px;
+  position: absolute;
+  right: 20px;
+  top: 300px;
+  text-align: right;
+}
+
+/* Bottom Info */
+
 .where {
     display: flex;
     flex-direction: row;
     background: transparent;
     align-items: center;
     position: absolute;
-    left: 1000px;
-    bottom: 20px;
+    left: 75vw;
+    bottom: 5vh;
     height: 300px;
-    animation: run 3s ease;
+    animation: run 10s ease;
+    transition: 1s;
+}
+
+.live {
+  width: 1000px;
+}
+
+.live p {
+  font-size: 18px;
+  letter-spacing: 3px;
 }
 
 /* .pix {
   position: relative;
-  left: 600px;
 } */
 
-@keyframes drop {
-  0{transform: translateY(-100vh);}
-  100%{transform: translateY(2vh);}
+/* @keyframes drop {
+  0{transform: translateY(1000vh);}
+  100%{transform: translateY(vh);}
 }
 
 @keyframes run {
-  0{transform: translateX(-100vw);
-  opacity: 0}
-  100%{transform: translateX(10vw);
-    opacity: 1;}
-}
+  0{transform: translateX(370vw);}
+  100%{transform: translateX(70vw);}
+} */
 
 footer {
   position: fixed;
