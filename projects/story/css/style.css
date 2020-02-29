@@ -1,8 +1,8 @@
 body {
   font-family: "helvetica", sans-serif;
   margin: 10px;
-  padding: 10px;
-  background: whitesmoke;
+  padding: 20px;
+  background: linear-gradient(whitesmoke, white);
 }
 
 ::-webkit-scrollbar {
@@ -32,24 +32,33 @@ body {
     background: transparent;
     align-items: center;
     position: absolute;
-    left: 45vw;
-    top: 4vh;
+    left: 40vw;
+    top: 6vh;
     height: 300px;
     animation: drop 3s ease;
     transition: 1s;
 }
 
 .made {
-  padding: 20px;
+  background: transparent;
+  margin-top: 40px;
   position: absolute;
   bottom: 10px;
   width: 500px;
 }
 
 .made p , .wrap p , .wrap2 p {
+  background: white;
+  border: solid thin lightgray;
+  border-radius: 20px;
+  padding: 20px;
   font-size: 18px;
   letter-spacing: 3px;
   text-align: justify;
+}
+
+.made img , .wrap img , .wrap2 img {
+  display: none;
 }
 
 /* Wires */
@@ -112,19 +121,19 @@ body {
 }
 
 .wrap {
-  padding: 20px;
+  margin-top: 10px;
   position: relative;
   left: 1200px;
   bottom: 10px;
-  width: 500px;
+  width: 600px;
 }
 
 .wrap2 {
-  padding: 20px;
+  margin-top: 10px;
   position: relative;
-  left: 2500px;
+  left: 2450px;
   bottom: 10px;
-  width: 500px;
+  width: 600px;
 }
 
 /* Loop Wrap */
@@ -276,7 +285,7 @@ body {
   position: absolute;
   left: 10px;
   width: 25px;
-  height: 180px;
+  height: 170px;
   z-index: 2;
   border-radius: 20px;
   border: thin solid lightgray;
@@ -300,7 +309,7 @@ body {
   position: absolute;
   left: 10px;
   width: 25px;
-  height: 175px;
+  height: 165px;
   z-index: 1;
   border-radius: 20px;
   border: thin solid lightgray;
@@ -416,6 +425,9 @@ body {
 }
 
 .cord h2 {
+  position: fixed;
+  top: 370px;
+  left: 400px;
   color: whitesmoke;
   font-size: 25px;
   font-weight: lighter;
@@ -425,6 +437,9 @@ body {
 }
 
 .cord p {
+  position: absolute;
+  top: 100px;
+  left: 350px;
   color: black;
   font-size: 18px;
   line-height: 25px;
@@ -497,6 +512,7 @@ body {
 
 
 .spons {
+  background: transparent;
   margin: 10px;
   margin-top: 50px;
   position: absolute;
@@ -521,10 +537,12 @@ body {
 }
 
 .live {
+  background: transparent;
   width: 1000px;
 }
 
 .pix {
+  background: transparent;
   display: flex;
   padding: 20px;
   position: relative;
@@ -536,6 +554,7 @@ body {
 }
 
 .etc {
+  background: transparent;
   padding: 20px;
   position: relative;
   left: 1000px;
@@ -543,10 +562,15 @@ body {
 }
 
 .live p , .etc p {
+  background: white;
+  border: solid thin lightgray;
+  border-radius: 20px;
+  padding: 20px;
   font-size: 18px;
   letter-spacing: 3px;
   text-align: justify;
 }
+
 
 @keyframes drop {
   0{transform: translateY(0vh);}
@@ -565,26 +589,11 @@ footer {
 }
 
 footer > a {
+    background: whitesmoke;
     border: gray solid thin;
     padding: 5px;
     color: gray;
     font-size: 20px;
     text-transform: uppercase;
     text-decoration: none;
-}
-
-@media screen (max-width:420px){
-  .how  {
-    left: 10vw;
-    height: 33%;
-  }
-
-  .ext-cord {
-    height: 33%;
-  }
-
-  .where {
-  left: 10vw;
-  height: 33%;
-  }
 }

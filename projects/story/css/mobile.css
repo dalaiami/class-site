@@ -1,0 +1,163 @@
+@media screen and (max-width:420px){
+
+/* Top Text */
+
+  .how  {
+    flex-direction: column;
+    left: 10vw;
+    top: 1vh;
+    width: 40vh;
+    animation: run 3s ease;
+  }
+
+  .made {
+    top: 50vh;
+    left: 2vw;
+    bottom: 10px;
+    width: 40vh;
+    margin-left: 20px;
+    z-index: 2;
+  }
+
+  .wires {
+    display: none;
+  }
+
+  .wrap {
+    top: 165vh;
+    left: 6vw;
+    width: 40vh;
+    z-index: 2;
+  }
+
+  .looped {
+    display: none;
+  }
+
+  .wrap2 {
+    top: 205vh;
+    left: 6vw;
+    width: 40vh;
+    z-index: 2;
+  }
+
+  .made p , .wrap p , .wrap2 p {
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .made img {
+    display: inline;
+    position: absolute;
+    top: 70vh;
+    left: 12vw;
+  }
+
+  .wrap img {
+    display: inline;
+    position: absolute;
+    top: 75vh;
+    left: -2vw;
+  }
+
+  .wrap2 img {
+    display: inline;
+    position: absolute;
+    top: 75vh;
+    left: 5vw;
+  }
+
+  .velcro {
+    display: none;
+  }
+
+/* Cord */
+
+  .ext-cord {
+    top: 5vh;
+    left: 20vw;
+    flex-direction: column;
+    z-index: 1;
+  }
+
+  .cord {
+    top: 500vh;
+    width: 30px;
+    height: 2550px;
+  }
+
+  .cord h2 {
+    position: absolute;
+    top: 10vh;
+    left: 85vw;
+    width: 38vw;
+    z-index: 1;
+  }
+
+  .cord p {
+    position: absolute;
+    top: 20vh;
+    left: 85vw;
+    width: 78vw;
+    z-index: 1;
+  }
+
+  .cord h2 , .cord p {
+    background: white;
+    border: solid thin lightgray;
+    border-radius: 20px;
+    padding: 20px;
+    color: black;
+  }
+
+  #redo {
+    margin-bottom: 100px;
+  }
+
+  .spons {
+    display: none;
+  }
+
+/* Right Text */
+
+  .where {
+    flex-direction: column;
+    width: 40vh;
+    top: 105vh;
+    left: 100vw;
+  }
+
+  .live {
+    margin-left: 40px;
+    left: 10vw;
+    width: 40vh;
+    z-index: 1;
+  }
+
+  .pix {
+    display: grid;
+    grid-template-columns: auto auto;
+    left: 10vw;
+    z-index: 1;
+  }
+
+  .pix img {
+    height: 180px;
+  }
+
+  .pix img:hover {
+    height: 300px;
+  }
+
+  .etc {
+    left: 10vw;
+    width: 40vh;
+    z-index: 1;
+  }
+
+    .live p , .etc p {
+      font-size: 16px;
+      text-align: left;
+    }
+
+}
