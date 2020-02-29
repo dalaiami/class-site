@@ -5,6 +5,32 @@ body {
   background: whitesmoke;
 }
 
+.topbar {
+  display: flex;
+  flex-direction: row;
+}
+
+.projects{
+  width: 60vw;
+}
+.exercises {
+  width: 40vw;
+}
+
+.responses {
+  width: 95vw;
+}
+
+.responses > h3 > a {
+    border: gray solid thin;
+    padding: 5px;
+}
+
+.projects:hover, .exercises:hover , .responses:hover {
+  border: gray dashed thin;
+  border-radius: 20px;
+}
+
 div {
   margin: 5px;
   padding: 0 10px;
@@ -52,47 +78,23 @@ img {
   width: 80px;
 }
 
-.topbar {
-  display: flex;
-  flex-direction: row;
-}
-
-.projects{
-  width: 60vw;
-}
-.exercises {
-  width: 40vw;
-}
-
-.responses {
-  /* display: scroll; */
-  width: 95vw;
-}
-
-.responses > h3 > a {
-    border: gray solid thin;
-    padding: 5px;
-}
-
-.projects:hover, .exercises:hover , .responses:hover {
-  border: gray dashed thin;
-  border-radius: 20px;
-}
-/* .projects:hover, .exercises:hover , .responses:hover h1 {
-  background: white;
-  color: blue;
-} */
-
 footer > a {
     border: gray solid thin;
     padding: 5px;
 }
 
-@media screen and (max-width:600px;) {
+@media screen and (max-width:420px) {
   .topbar {
     flex-direction: column;
   }
+  .projects{
+    height: 35vh;
+  }
+  .exercises {
+    height: 80vh;
+  }
   .responses {
+    padding: 10px;
     display: inline;
   }
 
