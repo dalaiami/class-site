@@ -5,18 +5,17 @@
   .how  {
     flex-direction: column;
     left: 10vw;
-    top: 1vh;
+    top: 3vh;
     width: 40vh;
-    animation: run 3s ease;
   }
 
   .made {
-    top: 50vh;
+    top: 140vh;
     left: 2vw;
     bottom: 10px;
     width: 40vh;
     margin-left: 20px;
-    z-index: 2;
+    z-index: 1;
   }
 
   .wires {
@@ -24,10 +23,10 @@
   }
 
   .wrap {
-    top: 165vh;
+    top: 255vh;
     left: 6vw;
     width: 40vh;
-    z-index: 2;
+    z-index: 1;
   }
 
   .looped {
@@ -35,10 +34,10 @@
   }
 
   .wrap2 {
-    top: 205vh;
+    top: 295vh;
     left: 6vw;
     width: 40vh;
-    z-index: 2;
+    z-index: 1;
   }
 
   .made p , .wrap p , .wrap2 p {
@@ -74,31 +73,32 @@
 /* Cord */
 
   .ext-cord {
-    top: 5vh;
+    top: 3vh;
     left: 20vw;
     flex-direction: column;
-    z-index: 1;
+    animation: drop 3s ease;
   }
 
   .cord {
     top: 500vh;
     width: 30px;
-    height: 2550px;
+    height: 5100px;
   }
 
   .cord h2 {
     position: absolute;
-    top: 10vh;
-    left: 85vw;
-    width: 38vw;
+    top: 50vh;
+    left: -8vw;
+    width: 35vw;
+    font-size: 20px;
     z-index: 1;
   }
 
   .cord p {
     position: absolute;
-    top: 20vh;
-    left: 85vw;
-    width: 78vw;
+    top: 60vh;
+    left: -10vw;
+    width: 70vw;
     z-index: 1;
   }
 
@@ -108,6 +108,7 @@
     border-radius: 20px;
     padding: 20px;
     color: black;
+    animation: drop 3s ease;
   }
 
   #redo {
@@ -115,16 +116,31 @@
   }
 
   .spons {
+    display: absolute;
+    top: 820vh;
+    left: 60vw;
+    width: 3vw;
+  }
+
+  .spons  h6 {
+    /* font-size: 15px;
+    text-align: right;
+    text-decoration: none; */
     display: none;
   }
 
-/* Right Text */
+  .spons img {
+  margin: 5px;
+  width: 50px;
+  }
+
+/* LowerText */
 
   .where {
     flex-direction: column;
     width: 40vh;
-    top: 105vh;
-    left: 100vw;
+    top: 500vh;
+    left: 12vw;
   }
 
   .live {
@@ -137,12 +153,16 @@
   .pix {
     display: grid;
     grid-template-columns: auto auto;
-    left: 10vw;
+    left: 5vw;
     z-index: 1;
+    background: linear-gradient(#FF6F00, #FF8F00);
+    border-radius: 10px;
   }
 
   .pix img {
     height: 180px;
+    border: solid thin #FF8F00;
+    border-radius: 10px;
   }
 
   .pix img:hover {
@@ -150,7 +170,7 @@
   }
 
   .etc {
-    left: 10vw;
+    left: 5vw;
     width: 40vh;
     z-index: 1;
   }
