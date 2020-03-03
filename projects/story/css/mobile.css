@@ -27,7 +27,7 @@ body {
   }
 
   .wrap {
-    top: 255vh;
+    top: 235vh;
     left: 6vw;
     width: 40vh;
     z-index: 1;
@@ -52,22 +52,22 @@ body {
   .made img {
     display: inline;
     position: absolute;
-    top: 70vh;
+    top: 40vh;
     left: 12vw;
   }
 
   .wrap img {
     display: inline;
     position: absolute;
-    top: 75vh;
+    top: 70vh;
     left: -2vw;
   }
 
   .wrap2 img {
     display: inline;
     position: absolute;
-    top: 75vh;
-    left: 5vw;
+    top: 45vh;
+    left: 3vw;
   }
 
   .velcro {
@@ -86,14 +86,14 @@ body {
   .cord {
     top: 500vh;
     width: 30px;
-    height: 5100px;
+    height: 4300px;
   }
 
   .cord h2 {
     position: absolute;
     top: 50vh;
     left: -8vw;
-    width: 35vw;
+    width: 28vw;
     font-size: 20px;
     z-index: 1;
   }
@@ -121,7 +121,7 @@ body {
 
   .spons {
     display: absolute;
-    top: 820vh;
+    top: 700vh;
     left: 60vw;
     width: 3vw;
   }
@@ -143,7 +143,7 @@ body {
   .where {
     flex-direction: column;
     width: 40vh;
-    top: 500vh;
+    top: 455vh;
     left: 12vw;
   }
 
