@@ -3,6 +3,8 @@ body {
   margin: 10px;
   padding: 20px;
   background: linear-gradient(whitesmoke, white);
+  max-height: 100vh;
+  overflow-y: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -429,15 +431,16 @@ a {
 }
 
 .cord h2 {
-  position: fixed;
-  top: 368px;
-  left: 400px;
+  position: absolute;
+  top: 68px;
+  left: 345px;
   color: whitesmoke;
   font-size: 25px;
   font-weight: lighter;
   text-transform: uppercase;
   line-height: 0;
   letter-spacing: 3px;
+  z-index: 2;
 }
 
 .cord p {
@@ -534,7 +537,7 @@ a {
     background: transparent;
     align-items: center;
     position: absolute;
-    left: 75vw;
+    left: 65vw;
     bottom: 5vh;
     height: 300px;
     animation: run 3s ease;
