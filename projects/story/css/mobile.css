@@ -83,6 +83,13 @@ body {
     animation: drop 3s ease;
   }
 
+  .plug-badge {
+    top: 15vh;
+    left: 38vw;
+    width: 10px;
+    z-index: 5;
+  }
+
   .cord {
     top: 500vh;
     width: 30px;
@@ -113,6 +120,13 @@ body {
     padding: 20px;
     color: black;
     animation: drop 3s ease;
+  }
+
+  .wall-badge {
+    bottom: 73vh;
+    left: 38vw;
+    width: 10px;
+    z-index: 5;
   }
 
   #redo {
@@ -163,7 +177,7 @@ body {
     border-radius: 10px;
   }
 
-  .badge {
+  .pix-badge {
     top: -2vh;
     left: 65vw;
     width: 10px;
@@ -174,10 +188,6 @@ body {
     height: 180px;
     border: solid thin #FF8F00;
     border-radius: 5px;
-  }
-
-  .pix img:hover {
-    height: 300px;
   }
 
   .etc {
