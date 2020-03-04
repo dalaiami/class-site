@@ -163,10 +163,17 @@ body {
     border-radius: 10px;
   }
 
+  .badge {
+    top: -2vh;
+    left: 65vw;
+    width: 10px;
+    z-index: 5;
+  }
+
   .pix img {
     height: 180px;
     border: solid thin #FF8F00;
-    border-radius: 10px;
+    border-radius: 5px;
   }
 
   .pix img:hover {

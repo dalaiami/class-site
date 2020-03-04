@@ -422,6 +422,7 @@ a {
   margin: 15px;
 }
 
+
 /* Cord */
 
 .cord {
@@ -560,10 +561,25 @@ a {
   border-radius: 10px;
 }
 
+.pix:hover .badge {
+  display: none;
+}
+
+.badge {
+  position: absolute;
+  bottom: 30vh;
+  right: -1vw;
+  background: linear-gradient(#EF5350, #FF3D00);
+  padding: 20px;
+  height: 10px;
+  border-radius: 100px;
+  color: white;
+}
+
 .pix img {
   margin: 10px;
   border: solid thin #FF8F00;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .etc {
