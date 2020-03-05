@@ -370,6 +370,7 @@ a {
   color: white;
   letter-spacing: 3px;
   opacity: .5;
+  cursor: pointer;
 }
 
 .length:hover {
@@ -431,7 +432,7 @@ a {
 .plug-badge {
   position: absolute;
   bottom: 16vh;
-  left: 16vw;
+  left: 17vw;
   background: linear-gradient(#EF5350, #FF3D00);
   padding: 20px;
   height: 10px;
