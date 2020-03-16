@@ -98,4 +98,8 @@ footer > a {
     display: inline;
   }
 
+  .projects:hover, .exercises:hover , .responses:hover {
+    border: none;
+  }
+
 }
