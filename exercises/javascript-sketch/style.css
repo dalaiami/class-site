@@ -1,0 +1,53 @@
+body {
+  font-family: sans-serif , "helvetica";
+  margin: 0;
+}
+
+ .button {
+  margin: 10px;
+  width: 100px;
+  background: blue;
+  border: thin solid blue;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button:hover {
+ background: whitesmoke;
+ color: blue;
+}
+
+.open {
+  transform: translateX(-310px);
+  }
+
+  #box {
+    position: fixed;
+    height: 30vh;
+    width: 250px;
+    top: 10px;
+    right: -300px;
+    background-color: transparent;
+    border: solid lightgray;
+    border-radius: 20px;
+    color: blue;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: transform 1s ease;
+  }
+
+  .marquee {
+    /* position: absolute;
+    bottom: 10vh;
+    left: 0; */
+    overflow: hidden;
+    border: thin solid white;
+    height: 70px;
+    font-size: 30px;
+    color: gray;
+  }
