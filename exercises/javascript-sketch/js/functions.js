@@ -25,27 +25,4 @@ function toggle() {
     }
 
 // Responsive
-
-    function setup(x) {
-      if (x.matches) { // If media query matches
-        createCanvas(500, 701);
-      } else {
-        createCanvas(1440, 790);
-      }
-    }
-
-
-        function draw(x) {
-          if (x.matches) { // If media query matches
-            strokeWeight(10);
-          } else {
-            strokeWeight(60);
-          }
-        }
-
     var x = window.matchMedia("(max-width: 420px)")
-    mySetup(x) // Call listener function at run time
-    x.addListener(mySetup) // Attach listener function on state changes
-    myDraw(x) // Call listener function at run time
-    x.addListener(myDraw) // Attach listener function on state changes
-    
