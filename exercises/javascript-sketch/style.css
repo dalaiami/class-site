@@ -66,10 +66,16 @@ body {
 
   .instruct {
     position: absolute;
-    top: 10px;
-    left: 40vw;
+    border: solid lightgray;
+    border-radius: 20px;
+    top: 35vh;
+    left: 35vw;
+    margin: 10px;
+    width: 400px;
+    line-height: 30px;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: lowercase;
+    color: gray;
   }
 
 marquee {
@@ -81,4 +87,16 @@ marquee {
   }
 
   @media screen and (max-width: 420px) {
+    .instruct {
+      position: absolute;
+      top: 25vh;
+      left: 2vw;
+      margin: 5px;
+      padding: 10px 30px;
+      width: 290px;
+      line-height: 30px;
+      text-align: left;
+      font-size: 20px;
+      z-index: 1;
+    }
   }
