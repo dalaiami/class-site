@@ -10,9 +10,10 @@ body {
   flex-direction: row;
 }
 
-.projects{
+.projects {
   width: 60vw;
 }
+
 .exercises {
   width: 40vw;
 }
@@ -21,12 +22,12 @@ body {
   width: 95vw;
 }
 
-.responses > h3 > a {
-    border: gray solid thin;
-    padding: 5px;
+.responses>h3>a {
+  border: gray solid thin;
+  padding: 5px;
 }
 
-.projects:hover, .exercises:hover , .responses:hover {
+.projects:hover, .exercises:hover, .responses:hover {
   border: gray dashed thin;
   border-radius: 20px;
 }
@@ -69,7 +70,6 @@ a:hover {
   background-color: whitesmoke;
   color: lightgray;
   border: lightgray solid thin;
-
 }
 
 img {
@@ -78,28 +78,30 @@ img {
   width: 80px;
 }
 
-footer > a {
-    border: gray solid thin;
-    padding: 5px;
+footer>a {
+  border: gray solid thin;
+  padding: 5px;
 }
 
 @media screen and (max-width:420px) {
   .topbar {
     flex-direction: column;
   }
-  .projects{
+
+  .projects {
     height: 35vh;
   }
+
   .exercises {
     height: 80vh;
   }
+
   .responses {
     padding: 10px;
     display: inline;
   }
 
-  .projects:hover, .exercises:hover , .responses:hover {
+  .projects:hover, .exercises:hover, .responses:hover {
     border: none;
   }
-
 }

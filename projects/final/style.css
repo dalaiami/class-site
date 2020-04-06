@@ -1,5 +1,5 @@
 body {
-  font-family: sans-serif , "helvetica";
+  font-family: sans-serif, "helvetica";
   margin: 0;
   max-height: 100vh;
   overflow-y: hidden;
@@ -8,33 +8,122 @@ body {
 .content {
   margin: 10px;
   position: absolute;
-  top: 0;
+  top: 5vh;
   left: 0;
-  height: 96%;
+  height: 90%;
   width: 98%;
   border: solid blue;
   border-radius: 20px;
 }
 
+.buttons {
+  position: fixed;
+  padding: 3px;
+  margin: 10px;
+  width: 95vw;
+  height: 1.2vw;
+  top: 0;
+  left: 3vh;
+  display: flex;
+  background: whitesmoke;
+  border-radius: 5px;
+  opacity: 70%;
+}
+.buttons:hover {
+  opacity: 100%;
+  background: lightgray;
+  animation: drop 3s;
+  border-bottom: solid thin whiesmoke;
+}
+.btn1 {
+  height: .9vw;
+  width: .9vw;
+  margin: .5px;
+  padding: .2px;
+  background: red;
+  border: solid rgb(212, 212, 212) thin;
+  border-radius: 50%;
+  font-size: 9px;
+  text-align: right;
+}
+.btn2 {
+  height: .9vw;
+  width: .9vw;
+  margin: .5px;
+  padding: .2px;
+  background: yellow;
+  border: solid rgb(212, 212, 212) thin;
+  border-radius: 50%;
+  font-size: 9px;
+  text-align: right;
+}
+.btn3 {
+  height: .9vw;
+  width: .9vw;
+  margin: .5px;
+  padding: .2px;
+  background: green;
+  border: solid rgb(212, 212, 212) thin;
+  border-radius: 50%;
+  font-size: 9px;
+  text-align: right;
+}
+.buttons:hover .btn1 , .btn2 , .btn3 {
+  color: rgb(212, 212, 212);
+}
+
 .intro {
   margin: 10px;
   position: absolute;
-  top: 10vh;
-  left: 20vw;
-  width: 500px;
+  top: 12vh;
+  left: 15vw;
+  width: 800px;
+  height: 425px;
   background: transparent;
   border: solid blue;
   border-radius: 20px;
   padding: 10px;
   color: blue;
   font-size: 25px;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   line-height: 30px;
   z-index: 1;
+  overflow-x: hidden;
+  overflow-x: auto;
 }
 
- .menu-button {
+.intro a{
+  text-decoration: none;
+  color: blue;
+}
+
+.intro a:hover{
+  background: blue;
+  border-radius: 20px;
+  padding: 4px;
+  color: white;
+}
+
+span {
+  font-weight: bolder;
+}
+
+h4 {
+  display: none;
+}
+
+/* div:hover h4 {
+  display: block;
+  background: blue;
+  border-radius: 20px;
+  padding: 8px;
+  color: white;
+  text-align: right;
+  height: 25px;
+} */
+
+.menu-button {
   margin: 10px;
   position: absolute;
   top: 5px;
@@ -43,7 +132,7 @@ body {
   background: red;
   border: solid red;
   border-radius: 20px;
-  padding: 5px;
+  padding: 4px;
   cursor: pointer;
   color: white;
   font-size: 25px;
@@ -53,212 +142,234 @@ body {
 }
 
 .menu-button:hover {
- background: white;
- color: red;
+  background: white;
+  color: red;
 }
 
 .menu-open {
-  transform: translateY(46vh);
-  }
+  transform: translateY(50vh);
+}
 
-  #menu {
-    position: fixed;
-    height: 30vh;
-    width: 200px;
-    top: -35vh;
-    left: 22px;
-    background-color: blue;
-    border: solid blue;
-    border-radius: 20px;
-    color: white;
-    font-size: 25px;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 30px;
-    transition: transform 1s ease;
-    z-index: 2;
-  }
+#menu {
+  position: fixed;
+  height: 30vh;
+  width: 200px;
+  top: -35vh;
+  left: 22px;
+  background-color: blue;
+  border: solid blue;
+  border-radius: 20px;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 30px;
+  transition: transform 1s ease;
+  z-index: 2;
+}
 
-  #menu a {
-    color: white;
-    text-decoration: none;
-    /* font-weight: lighter; */
-    letter-spacing: 5px;
-  }
+#menu a {
+  color: white;
+  text-decoration: none;
+  /* font-weight: lighter; */
+  letter-spacing: 5px;
+  cursor: pointer;
+}
 
-  #menu:hover {
-    background-color: white;
-  }
+#menu:hover {
+  background-color: white;
+}
 
-  #menu:hover a {
-    color: blue;
-  }
+#menu:hover a {
+  color: blue;
+}
 
-  #menu a:hover {
-    background: blue;
-    border-radius: 20px;
-    padding: 4px;
-    color: white;
-  }
+#menu a:hover {
+  background: blue;
+  border-radius: 20px;
+  padding: 4px;
+  color: white;
+}
 
-  .about-open {
-    transform: translateX(-630px);
-    }
+.about-open {
+  transform: translateX(-630px);
+}
 
-    #about {
-      position: fixed;
-      height: 50%;
-      width: 600px;
-      top: 10px;
-      right: -620px;
-      background-color: white;
-      border: solid red;
-      border-radius: 20px;
-      padding: 5px;
-      color: red;
-      font-size: 25px;
-      text-align: center;
-      text-transform: uppercase;
-      line-height: 30px;
-      transition: transform 1s ease;
-      z-index: 2;
-    }
+#about {
+  position: fixed;
+  height: 50%;
+  width: 600px;
+  top: 10px;
+  right: -620px;
+  background-color: white;
+  border: solid red;
+  border-radius: 20px;
+  padding: 5px;
+  color: red;
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 30px;
+  transition: transform 1s ease;
+  z-index: 2;
+  overflow-x: hidden;
+  overflow-x: auto;
+}
 
-    #about-menu a {
-      text-decoration: none;
-      padding: 4px;
-      color: red;
-    }
+#about-menu a {
+  text-decoration: none;
+  padding: 4px;
+  color: red;
+}
 
-    #about-menu a:hover {
-      background: red;
-      border-radius: 20px;
-      color: white;
-    }
+#about-menu a:hover {
+  background: red;
+  border-radius: 20px;
+  color: white;
+}
 
-  .work-open {
-    transform: translateX(-730px);
-    }
+.work-open {
+  transform: translateX(-730px);
+}
 
-    #work {
-      display: grid;
-      grid-template-columns: 140px 140px 140px 140px 140px;
-      grid-template-rows: auto auto;
-      position: fixed;
-      height: 52%;
-      width: 700px;
-      top: 10px;
-      right: -720px;
-      background-color: white;
-      border: solid orange;
-      border-radius: 20px;
-      padding: 10px 5px;
-      color: orange;
-      font-size: 25px;
-      text-align: center;
-      text-transform: uppercase;
-      line-height: 30px;
-      transition: transform 1s ease;
-      z-index: 2;
-    }
+#work {
+  display: grid;
+  grid-template-columns: 140px 140px 140px 140px 140px;
+  grid-template-rows: auto auto;
+  position: fixed;
+  height: 52%;
+  width: 700px;
+  top: 10px;
+  right: -720px;
+  background-color: white;
+  border: solid orange;
+  border-radius: 20px;
+  padding: 10px 5px;
+  color: orange;
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 30px;
+  transition: transform 1s ease;
+  z-index: 2;
+  overflow-x: hidden;
+  overflow-x: auto;
+}
 
-    #work img {
-      height: 200px;
-      width: 130px;
-    }
+#work img {
+  height: 200px;
+  width: 130px;
+}
 
-    #work-menu a {
-      text-decoration: none;
-      padding: 4px;
-      color: orange;
-    }
+#work-menu a {
+  text-decoration: none;
+  padding: 4px;
+  color: orange;
+}
 
-    #work-menu a:hover {
-      background: orange;
-      border-radius: 20px;
-      color: white;
-    }
+#work-menu a:hover {
+  background: orange;
+  border-radius: 20px;
+  color: white;
+}
 
-  .play-open {
-    transform: translateX(-830px);
-    }
+.play-open {
+  transform: translateX(-830px);
+}
 
-    #play {
-      display: grid;
-      grid-template-columns: auto auto auto auto auto;
-      grid-template-rows: 220px 220px;
-      position: fixed;
-      height: 82%;
-      width: 800px;
-      top: 10px;
-      right: -820px;
-      background-color: white;
-      border: solid pink;
-      border-radius: 20px;
-      padding: 10px 5px;
-      color: pink;
-      font-size: 25px;
-      text-align: center;
-      text-transform: uppercase;
-      line-height: 30px;
-      transition: transform 1s ease;
-      z-index: 2;
-    }
+#play {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: 220px 220px;
+  position: fixed;
+  height: 82%;
+  width: 800px;
+  top: 10px;
+  right: -820px;
+  background-color: white;
+  border: solid pink;
+  border-radius: 20px;
+  padding: 10px 5px;
+  color: pink;
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 30px;
+  transition: transform 1s ease;
+  z-index: 2;
+  overflow-x: hidden;
+  overflow-x: auto;
+}
 
-    #play img {
-      height: 200px;
-      width: 150px;
-    }
+#play img {
+  height: 200px;
+  width: 150px;
+}
 
-    #play-menu a {
-      text-decoration: none;
-      padding: 4px;
-      color: pink;
-    }
+/* #play img:hover {
+  animation: grow 3s ease;
+  transition: 1s;
+} */
 
-    #play-menu a:hover {
-      background: pink;
-      border-radius: 20px;
-      color: white;
-    }
+#play-menu a {
+  text-decoration: none;
+  padding: 4px;
+  color: pink;
+}
 
-  .contact-open {
-    transform: translateX(-320px);
-    }
+#play-menu a:hover {
+  background: pink;
+  border-radius: 20px;
+  color: white;
+}
 
-    #contact {
-      position: fixed;
-      height: 10vh;
-      width: 200px;
-      top: 25px;
-      right: -300px;
-      background-color: white;
-      border: solid blue;
-      border-radius: 20px;
-      padding: 10px;
-      color: white;
-      font-size: 20px;
-      text-align: center;
-      text-transform: uppercase;
-      line-height: 22px;
-      transition: transform 1s ease;
-      z-index: 2;
-    }
+.contact-open {
+  transform: translateX(-330px);
+}
 
-    #contact a {
-      color: blue;
-      text-decoration: none;
-      letter-spacing: 5px;
-    }
+#contact {
+  position: fixed;
+  height: 12vh;
+  width: 200px;
+  top: 25px;
+  right: -300px;
+  background-color: white;
+  border: solid blue;
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 25px;
+  transition: transform 1s ease;
+  z-index: 2;
+}
+
+#contact a {
+  color: blue;
+  text-decoration: none;
+  letter-spacing: 5px;
+}
+
+#contact a:hover {
+  background: blue;
+  border-radius: 20px;
+  padding: 5px;
+  color: white;
+}
 
 marquee {
-    background: transparent;
-    position: absolute;
-    top: 15vh;
-    right: 0vw;
-    z-index: 1;
-  }
+  background: transparent;
+  position: absolute;
+  top: 15vh;
+  right: 0vw;
+  z-index: 1;
+}
 
-  @media screen and (max-width: 420px) {
+/* @keyframes grow {
+  0%{transform: scale(0);}
+  100%{transform: scale(1.5);}
+} */
 
-  }
+@media screen and (max-width: 420px) {}
