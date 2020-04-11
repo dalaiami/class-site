@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Portfolio Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="smile.gif">
+
+    <style>
+    #menu {
+      height: 22vh;
+    }
+
+    .box {
+      display: grid;
+      grid-template-columns: 170px 170px 170px 170px 170px;
+      grid-template-rows: 220px 220px;
+      margin: 10px;
+      position: absolute;
+      top: 2vh;
+      left: 18vw;
+      width: 840px;
+      height: 625px;
+      background: transparent;
+      border: solid pink;
+      border-radius: 20px;
+      padding: 10px;
+      color: pink;
+      font-size: 25px;
+      text-align: left;
+      text-transform: uppercase;
+      line-height: 30px;
+      z-index: 1;
+      overflow-x: hidden;
+      overflow-x: auto;
+    }
+
+    .box img {
+      height: 200px;
+      width: 150px;
+    }
+
+    #box-menu a {
+      position: absolute;
+      text-decoration: none;
+      padding: 4px;
+      color: pink;
+      z-index: 2;
+    }
+
+    #box-menu a:hover {
+      background: pink;
+      border-radius: 20px;
+      color: white;
+    }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="buttons">
+        <a  onclick="index.html"><div class="btn1"></div></a>
+        <div class="btn2"></div>
+        <div class="btn3"></div>
+    </div>
+
+      <div class="content">
+    <div onclick="menutoggle()" class="menu-button">menu</div>
+      <div id="menu">
+        <p>
+          <a  href="https://dalaiami.github.io/class-site/projects/final/index.html">about</a>
+          <br><a href="https://dalaiami.github.io/class-site/projects/final/work.html">work</a>
+          <br><a href="https://dalaiami.github.io/class-site/projects/final/play.html">play</a>
+          <br><a onclick="contacttoggle()" class="contact-button">contact</a>
+        </p>
+      </div>
+
+      <div class="box">
+        <h4>Play</h4>
+        <div class="grid-item"><img src="images/11920-www.jpg"></div>
+        <div class="grid-item"><img src="images/11920-theweb.jpg"></div>
+        <div class="grid-item"><img src="images/11920-codingbones1.jpg" onclick="this.src='images/11920-codingbones2.jpg';" onmouseleave="this.src='images/11920-codingbones1.jpg';"/></div>
+        <div class="grid-item"><img src="images/2920-IM1.jpg" onclick="this.src='images/2920-IM2.jpg';" onmouseleave="this.src='images/2920-IM1.jpg';"/></div>
+        <div class="grid-item"><img src="images/21620-CA1.jpg" /></div>
+        <div class="grid-item"><img src="images/22320-masterpiece1.jpg" onclick="this.src='images/22320-masterpiece2.jpg';" onmouseleave="this.src='images/22320-masterpiece1.jpg';"/></div>
+        <div class="grid-item"><img src="images/22320-public.jpg" /></div>
+        <div class="grid-item"><img src="images/22320-terms1.jpg" onclick="this.src='images/22320-terms2.jpg';" onmouseleave="this.src='images/22320-terms1.jpg';"/></div>
+        <div class="grid-item"><img src="images/31520-edgeless3.jpg" onclick="this.src='images/31520-edgeless1.jpg';" onmouseleave="this.src='images/31520-edgeless3.jpg';"/></div>
+        <div class="grid-item"><img src="images/31520-window.jpg" /></div>
+        <div class="grid-item"><img src="images/31520-fluid2.jpg" /></div>
+        <div id="play-menu">view my &rarr; <a href="http://instagram.com" target="_blank">instagram</a></div>
+      </div>
+
+      <div id="contact">
+        <br><a href="mailto:lookuphoto@gmail.com" target="_blank">email</a>
+        <br><a href="http://instagram.com/dalaiami" target="_blank">instagram</a>
+      </div>
+
+    </div>
+
+
+       <!-- call library first -->
+      <script src="js/jquery.min.js"></script>
+      <!-- <script src="js/jquery.marquee.min.js"></script> -->
+      <script src="js/p5.min.js"></script>
+      <script src="js/functions.js"></script>
+</body>
+</html>
