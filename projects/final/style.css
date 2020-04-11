@@ -192,22 +192,22 @@ h4 {
 }
 
 .about-open {
-  transform: translateX(-630px);
+  transform: translateX(-570px);
 }
 
 #about {
   position: fixed;
-  height: 50%;
-  width: 600px;
+  height: 25%;
+  width: 520px;
   top: 10px;
-  right: -620px;
+  right: -560px;
   background-color: white;
   border: solid red;
   border-radius: 20px;
-  padding: 5px;
+  padding: 10px;
   color: red;
   font-size: 25px;
-  text-align: center;
+  text-align: right;
   text-transform: uppercase;
   line-height: 30px;
   transition: transform 1s ease;
