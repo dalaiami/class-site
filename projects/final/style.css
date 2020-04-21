@@ -9,6 +9,25 @@ body {
   user-select: none; /* Standard */
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: whitesmoke;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: lightgray;
+  height: 5px;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(lightgray, blue);
+}
+
 .content {
   margin: 10px;
   position: absolute;
