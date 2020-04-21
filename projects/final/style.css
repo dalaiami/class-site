@@ -15,6 +15,7 @@ body {
 
 ::-webkit-scrollbar-track {
   background: whitesmoke;
+  opacity: 50%;
   width: 10px;
 }
 
