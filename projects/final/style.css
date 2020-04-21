@@ -14,19 +14,18 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: whitesmoke;
-  opacity: 50%;
-  width: 10px;
+  background: transparent;
+  width: 20px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: lightgray;
+  background: linear-gradient(transparent, lightgray);
   height: 5px;
   border-radius: 20px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(lightgray, blue);
+  background: linear-gradient(transparent, blue);
 }
 
 .content {
