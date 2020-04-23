@@ -396,3 +396,20 @@ marquee {
 } */
 
 @media screen and (max-width: 420px) {}
+
+  footer {
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
+    z-index: 2;
+  }
+
+  footer > a {
+      background: white;
+      border: blue solid thin;
+      padding: 5px;
+      color: blue;
+      font-size: 20px;
+      text-transform: uppercase;
+      text-decoration: none;
+  }
